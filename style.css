@@ -66,6 +66,8 @@ nav a:hover {
   align-items: center;
   padding: 4rem;
   overflow: hidden;
+  background-size: contain;
+
 }
 
 .hero::before {

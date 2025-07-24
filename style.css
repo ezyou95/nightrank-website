@@ -8,6 +8,9 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #0d0d0d;
   color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -16,6 +19,7 @@ header {
   align-items: center;
   padding: 2rem;
   background-color: #0d0d0d;
+  z-index: 10;
 }
 
 .logo {
@@ -51,15 +55,18 @@ nav a:hover {
 }
 
 .hero {
+  flex: 1;
   position: relative;
   background-image: url("nightrank.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4rem;
+  overflow: hidden;
 }
-
 
 .hero::before {
   content: "";
@@ -68,14 +75,15 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(13, 13, 13, 0.675);
+  background: rgba(13, 13, 13, 0.076);
   z-index: 1;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 700px;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .hero-content h2 {
@@ -107,12 +115,34 @@ nav a:hover {
   background-color: #e62b2b;
 }
 
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-block p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
 footer {
   background-color: #0a0a0a;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 footer p {

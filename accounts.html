@@ -9,49 +9,94 @@
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="https://media.discordapp.net/attachments/1255511385777901729/1397944952327110756/j5SLI6u.webp?ex=68839131&is=68823fb1&hm=30e2fca01265c62aa8b4404c72cf9f76b785d56bec7ca312d810970443adbdc3&=&format=webp&width=889&height=889" alt="NightRank logo" />
-      <h1>NIGHTRANK</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="accounts.html" class="active">ACCOUNTS</a></li>
-        <li><a href="boosting.html">BOOSTING</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="logo">
+    <img src="https://media.discordapp.net/attachments/1255511385777901729/1397944952327110756/j5SLI6u.webp" alt="NightRank logo" />
+    <h1>NIGHTRANK</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="accounts.html" class="active">ACCOUNTS</a></li>
+      <li><a href="boosting.html">BOOSTING</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section class="account-section">
-    <h2>Comptes Valorant Premium</h2>
-    <p>Choisissez parmi nos comptes prêts à l'emploi avec différents rangs et skins.</p>
+<section class="account-section">
+  <h2>Comptes Valorant Premium</h2>
+  <p>Choisissez parmi nos comptes prêts à l'emploi avec différents rangs et skins.</p>
 
-    <div class="account-list">
-      <div class="account-card">
-        <h3>Compte or 3</h3>
-        <p>Skins Vandal River et pass de combat</p>
-        <p><strong>Prix : 15€</strong></p>
-        <a href="https://discord.com/channels/1395334357509472277/1396208206308577492" class="btn">Acheter</a>
+  <div class="account-list">
+
+    <!-- Compte Or 3 -->
+    <div class="account-card">
+      <h3>Compte Or 3</h3>
+      <p><strong>Prix : 15€</strong></p>
+      <a href="https://discord.com/channels/1395334357509472277/1396208206308577492" class="btn">Acheter</a>
+      <button class="btn-secondary" onclick="toggleDetails('gold')">Voir les détails du compte</button>
+
+      <div class="account-details" id="gold">
+        <p>🎮 Compte Valorant à vendre – Gold 3</p>
+        <p>✨ Skins Vandal et pass de combat – Seulement 15 €</p>
+        <ul>
+          <li>🔹 Rang : Gold 3</li>
+          <li>✅ Vandal River (River Vandal)</li>
+          <li>✅ Skins du Pass de Combat Bêta</li>
+          <li>✅ Autres skins débloqués</li>
+          <li>📌 Stock : 1</li>
+          <li>🔹 MDP modifiable ✅</li>
+          <li>🔹 Adresse e-mail modifiable ✅</li>
+          <li>💰 Prix : 15 € (fixe)</li>
+        </ul>
+
+        <a href="https://media.discordapp.net/attachments/1397325885346156594/1397510816772657215/image.png?ex=68834e5f&is=6881fcdf&hm=43d5866f6f3a9a844aa6f507a25397e3790e406039f73c80538cd77f478cce68&=&format=webp&quality=lossless&width=1137&height=722"
+           target="_blank">
+          <img src="https://media.discordapp.net/attachments/1397325885346156594/1397510816772657215/image.png?ex=68834e5f&is=6881fcdf&hm=43d5866f6f3a9a844aa6f507a25397e3790e406039f73c80538cd77f478cce68&=&format=webp&quality=lossless&width=1137&height=722"
+               alt="Image Compte Gold 3"
+               style="margin-top: 1rem; border-radius: 8px; max-width: 100%; height: auto;" />
+        </a>
       </div>
+    </div>
 
-      <div class="account-card">
-        <h3>Compte Diamant</h3>
-        <p>Sans skins</p>
-        <p><strong>Prix : 11€</strong></p>
-        <a href="https://discord.com/channels/1395334357509472277/1396208206308577492" class="btn">Acheter</a>
+    <!-- Compte Diamant -->
+    <div class="account-card">
+      <h3>Compte Diamant</h3>
+      <p><strong>Prix : 11€</strong></p>
+      <a href="https://discord.com/channels/1395334357509472277/1396208206308577492" class="btn">Acheter</a>
+      <button class="btn-secondary" onclick="toggleDetails('diamond')">Voir les détails du compte</button>
+
+      <div class="account-details" id="diamond">
+        <p>💥 Compte Valorant à vendre – 11€ seulement ! 💥</p>
+        <p>Je vends un compte Valorant rang Diamant, sans skins.</p>
+        <ul>
+          <li>📌 Rang : Diamant</li>
+          <li>📌 Aucun skin</li>
+          <li>📌 Stock : 2</li>
+          <li>✔️ Région : Europe</li>
+          <li>✔️ Paiement via : PayPal, Paysafecard</li>
+          <li>💰 Prix : 11€</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2024 NIGHTRANK</p>
-    <div class="socials">
-      <a href="https://discord.gg/fenCvBn3TK"><img src="discord.png" alt="Discord" /></a>
-      <a href="https://www.tiktok.com/@soqzie"><img src="tiktok.png" alt="TikTok" /></a>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  <p>© 2024 NIGHTRANK</p>
+  <div class="socials">
+    <a href="https://discord.gg/fenCvBn3TK"><img src="discord.png" alt="Discord" /></a>
+    <a href="https://www.tiktok.com/@soqzie"><img src="tiktok.png" alt="TikTok" /></a>
+  </div>
+</footer>
+
+<script>
+  function toggleDetails(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('visible');
+  }
+</script>
+
 </body>
 </html>

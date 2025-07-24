@@ -58,10 +58,13 @@ nav a:hover {
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 4rem;
+
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  text-align: center;       /* facultatif si tu veux centrer le texte */
 }
+
 
 .hero::before {
   content: "";

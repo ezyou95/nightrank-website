@@ -19,6 +19,13 @@ body {
   background-attachment: fixed;
 }
 
+/* main prend toute la place disponible */
+main.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
   justify-content: space-between;

@@ -24,9 +24,14 @@
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 2rem;
-  width: 250px;
+  width: 280px;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 45, 45, 0.2);
+  transition: transform 0.3s;
+}
+
+.account-card:hover {
+  transform: scale(1.03);
 }
 
 .account-card h3 {
@@ -38,3 +43,55 @@
   margin-bottom: 1rem;
   color: #ccc;
 }
+
+.account-card .btn,
+.account-card .btn-secondary {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ff2d2d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-card .btn-secondary {
+  background-color: #333;
+  margin-top: 0.5rem;
+}
+
+.account-details {
+  display: none;
+  margin-top: 1rem;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.account-details.visible {
+  display: block;
+}
+
+.account-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  text-align: left;
+}
+
+.account-details li {
+  margin-bottom: 0.5rem;
+}
+
+.account-details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+

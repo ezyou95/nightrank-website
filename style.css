@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 
   background-image: url("raw.png");
-  background-size: 40% auto;
+  background-size: 60% auto;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -1,0 +1,40 @@
+.account-section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.account-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.account-section p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.account-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.account-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 45, 45, 0.2);
+}
+
+.account-card h3 {
+  color: #ff2d2d;
+  margin-bottom: 1rem;
+}
+
+.account-card p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
